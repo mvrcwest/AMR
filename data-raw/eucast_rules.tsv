@@ -9,9 +9,6 @@
 # >>>>> IF YOU WANT TO IMPORT THIS FILE INTO YOUR OWN SOFTWARE, HAVE THE FIRST 10 LINES SKIPPED <<<<<
 # -------------------------------------------------------------------------------------------------------------------------------				
 if_mo_property	like.is.one_of	this_value	and_these_antibiotics	have_these_values	then_change_these_antibiotics	to_value	reference.rule	reference.rule_group	reference.version	note
-order	is	Enterobacterales	AMP	S	AMX	S	Enterobacterales (Order)	Breakpoints	11	
-order	is	Enterobacterales	AMP	I	AMX	I	Enterobacterales (Order)	Breakpoints	11	
-order	is	Enterobacterales	AMP	R	AMX	R	Enterobacterales (Order)	Breakpoints	11
 genus	is	Pseudomonas	TZP	S	TZP	I	Pseudomonas	Breakpoints	11
 genus	is	Pseudomonas	CAZ	S	CAZ	I	Pseudomonas	Breakpoints	11
 genus	is	Pseudomonas	IPM	S	IPM	I	Pseudomonas	Breakpoints	11
@@ -24,6 +21,7 @@ genus_species	is	Staphylococcus saprophyticus	AMP	S	AMX, AMC, PIP, TZP	S	Staphyl
 genus	is	Staphylococcus	FOX	S	carbapenems, cephalosporins_except_CAZ	S	Staphylococcus	Breakpoints	11	
 genus	is	Staphylococcus	FOX	I	carbapenems, cephalosporins_except_CAZ	I	Staphylococcus	Breakpoints	11	
 genus	is	Staphylococcus	FOX	R	carbapenems, cephalosporins_except_CAZ	R	Staphylococcus	Breakpoints	11
+genus	is	Staphylococcus			CTB, CZA, CEI	NA	Staphylococcus	Breakpoints	11
 genus	is	Staphylococcus	CTX	S	CTX	I	Staphylococcus	Breakpoints	11	
 genus	is	Staphylococcus	NOR	S	MFX	S	Staphylococcus	Breakpoints	11
 genus	is	Staphylococcus	NOR	S	CIP, LVX, OFX	I	Staphylococcus	Breakpoints	11	
@@ -38,40 +36,40 @@ genus	is	Enterococcus	AMP	R	AMX, AMC, PIP, TZP	R	Enterococcus	Breakpoints	11
 genus	is	Enterococcus	NOR	S	CIP, LVX	S	Enterococcus	Breakpoints	11	
 genus	is	Enterococcus	NOR	I	CIP, LVX	I	Enterococcus	Breakpoints	11	
 genus	is	Enterococcus	NOR	R	CIP, LVX	R	Enterococcus	Breakpoints	11	
-genus_species	one_of	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	PEN	S	ampicillin, ureidopenicillins, cephalosporins_except_CAZ, carbapenems, FLC	S	Streptococcus groups A, B, C, G	Breakpoints	11	
-genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	PEN	I	ampicillin, ureidopenicillins, cephalosporins_except_CAZ, carbapenems, FLC	I	Streptococcus groups A, B, C, G	Breakpoints	11	
-genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	PEN	R	ampicillin, ureidopenicillins, cephalosporins_except_CAZ, carbapenems, FLC	R	Streptococcus groups A, B, C, G	Breakpoints	11	
+genus_species	one_of	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	PEN	S	aminopenicillin, ureidopenicillins, cephalosporins_except_CAZ, carbapenems, FLC, AMC	S	Streptococcus groups A, B, C, G	Breakpoints	11	
+genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	PEN	I	aminopenicillin, ureidopenicillins, cephalosporins_except_CAZ, carbapenems, FLC, AMC	I	Streptococcus groups A, B, C, G	Breakpoints	11	
+genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	PEN	R	aminopenicillin, ureidopenicillins, cephalosporins_except_CAZ, carbapenems, FLC, AMC	R	Streptococcus groups A, B, C, G	Breakpoints	11	
 genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	NOR	S	MFX	S	Streptococcus groups A, B, C, G	Breakpoints	11	
 genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	NOR	S	LVX	I	Streptococcus groups A, B, C, G	Breakpoints	11	
 genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	ERY	S	AZM, CLR, RXT	S	Streptococcus groups A, B, C, G	Breakpoints	11	
 genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	ERY	I	AZM, CLR, RXT	I	Streptococcus groups A, B, C, G	Breakpoints	11	
 genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	ERY	R	AZM, CLR, RXT	R	Streptococcus groups A, B, C, G	Breakpoints	11	
 genus_species	like	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	TCY	S	DOX, MNO	S	Streptococcus groups A, B, C, G	Breakpoints	11	
-genus_species	is	Streptococcus pneumoniae	PEN	S	AMP, AMX, AMC, PIP, TZP	S	Streptococcus pneumoniae	Breakpoints	11	
-genus_species	is	Streptococcus pneumoniae	AMP	S	PIP, TZP	S	Streptococcus pneumoniae	Breakpoints	11	
+genus_species	is	Streptococcus pneumoniae	PEN	S	AMP, PIP, TZP	S	Streptococcus pneumoniae	Breakpoints	11	
+genus_species	is	Streptococcus pneumoniae	AMP	S	PIP, AMX, TZP	S	Streptococcus pneumoniae	Breakpoints	11	
 genus_species	is	Streptococcus pneumoniae	AMP	I	PIP, TZP	I	Streptococcus pneumoniae	Breakpoints	11	
-genus_species	is	Streptococcus pneumoniae	AMP	R	AMX, AMC, PIP, TZP	R	Streptococcus pneumoniae	Breakpoints	11	
+genus_species	is	Streptococcus pneumoniae	AMP	R	PIP, AMX, TZP	R	Streptococcus pneumoniae	Breakpoints	11	
 genus_species	is	Streptococcus pneumoniae	NOR	S	MFX	S	Streptococcus pneumoniae	Breakpoints	11	
-genus_species	is	Streptococcus pneumoniae	NOR	S	LVX	I	Streptococcus pneumoniae	Breakpoints	11	
+genus_species	is	Streptococcus pneumoniae	NOR	S	LVX	I	Streptococcus pneumoniae	Breakpoints	11
+genus_species	is	Streptococcus pneumoniae	LVX	S	LVX	I	Streptococcus pneumoniae	Breakpoints	11
+genus_species	is	Streptococcus pneumoniae	CIP NA	CIP	R	Streptococcus pneumoniae	Breakpoints	11
 genus_species	is	Streptococcus pneumoniae	ERY	S	AZM, CLR, RXT	S	Streptococcus pneumoniae	Breakpoints	11	
 genus_species	is	Streptococcus pneumoniae	ERY	I	AZM, CLR, RXT	I	Streptococcus pneumoniae	Breakpoints	11	
 genus_species	is	Streptococcus pneumoniae	ERY	R	AZM, CLR, RXT	R	Streptococcus pneumoniae	Breakpoints	11
-genus_species	is	Streptococcus pneumoniae	LVX	S	LVX	I	Streptococcus pneumoniae	Breakpoints	11
-genus_species	is	Streptococcus pneumoniae	CIP NA	CIP	R	Streptococcus pneumoniae	Breakpoints	11	
 genus_species	is	Streptococcus pneumoniae	TCY	S	DOX, MNO	S	Streptococcus pneumoniae	Breakpoints	11	
 genus_species	like	^Streptococcus (anginosus|australis|bovis|constellatus|cristatus|equinus|gallolyticus|gordonii|infantarius|infantis|intermedius|mitis|mutans|oligofermentans|oralis|parasanguinis|peroris|pseudopneumoniae|salivarius|sanguinis|sinensis|sobrinus|thermophilus|vestibularis|viridans)$	PEN	S	AMP, AMX, AMC, PIP, TZP	S	Viridans group streptococci	Breakpoints	11	
 genus_species	like	^Streptococcus (anginosus|australis|bovis|constellatus|cristatus|equinus|gallolyticus|gordonii|infantarius|infantis|intermedius|mitis|mutans|oligofermentans|oralis|parasanguinis|peroris|pseudopneumoniae|salivarius|sanguinis|sinensis|sobrinus|thermophilus|vestibularis|viridans)$	AMP	S	AMX, AMC, PIP, TZP	S	Viridans group streptococci	Breakpoints	11	
 genus_species	like	^Streptococcus (anginosus|australis|bovis|constellatus|cristatus|equinus|gallolyticus|gordonii|infantarius|infantis|intermedius|mitis|mutans|oligofermentans|oralis|parasanguinis|peroris|pseudopneumoniae|salivarius|sanguinis|sinensis|sobrinus|thermophilus|vestibularis|viridans)$	AMP	I	AMX, AMC, PIP, TZP	I	Viridans group streptococci	Breakpoints	11	
 genus_species	like	^Streptococcus (anginosus|australis|bovis|constellatus|cristatus|equinus|gallolyticus|gordonii|infantarius|infantis|intermedius|mitis|mutans|oligofermentans|oralis|parasanguinis|peroris|pseudopneumoniae|salivarius|sanguinis|sinensis|sobrinus|thermophilus|vestibularis|viridans)$	AMP	R	AMX, AMC, PIP, TZP	R	Viridans group streptococci	Breakpoints	11	
-genus_species	is	Haemophilus influenzae	AMP	S	PIP	S	Haemophilus influenzae	Breakpoints	11
 genus_species	is	Haemophilus influenzae	AMP	S	AMX	I	Haemophilus influenzae	Breakpoints	11
-genus_species	is	Haemophilus influenzae	AMP	I	AMX, PIP	I	Haemophilus influenzae	Breakpoints	11	
+genus_species	is	Haemophilus influenzae	AMP	I	PIP	I	Haemophilus influenzae	Breakpoints	11	
 genus_species	is	Haemophilus influenzae	AMP	R	AMX, PIP	R	Haemophilus influenzae	Breakpoints	11
 genus_species	is	Haemophilus influenzae			CAZ	NA	Haemophilus influenzae	Breakpoints	11
 genus_species	is	Haemophilus influenzae			FOX	NA	Haemophilus influenzae	Breakpoints	11
 genus_species	is	Haemophilus influenzae			OXA	NA	Haemophilus influenzae	Breakpoints	11
 genus_species	is	Haemophilus influenzae			CFR	NA	Haemophilus influenzae	Breakpoints	11
-genus_species	is	Haemophilus influenzae	PEN	S	AMP, PIP, TZP	S	Haemophilus influenzae	Breakpoints	11	
+genus_species	is	Haemophilus influenzae	PEN	S	AMP, PIP, TZP	S	Haemophilus influenzae	Breakpoints	11
+genus_species	is	Haemophilus influenzae	PEN	S	AMX	I	Haemophilus influenzae	Breakpoints	11
 genus_species	is	Haemophilus influenzae	NAL	S	CIP, LVX, MFX, OFX	S	Haemophilus influenzae	Breakpoints	11	
 genus_species	is	Haemophilus influenzae	TCY	S	DOX, MNO	S	Haemophilus influenzae	Breakpoints	11	
 genus_species	is	Moraxella catarrhalis	NAL	S	CIP, LVX, MFX, OFX	S	Moraxella catarrhalis	Breakpoints	11	
@@ -82,9 +80,9 @@ genus_species	is	Moraxella catarrhalis	TCY	S	DOX, MNO	S	Moraxella catarrhalis	Br
 genus	one_of	Actinomyces, Bifidobacterium, Clostridium, Cutibacterium, Eggerthella, Eubacterium, Lactobacillus, Propionibacterium	PEN	S	AMP, AMX, PIP, TIC	S	Anaerobic Gram-positives	Breakpoints	11	
 genus	one_of	Actinomyces, Bifidobacterium, Clostridium, Cutibacterium, Eggerthella, Eubacterium, Lactobacillus, Propionibacterium	PEN	I	AMP, AMX, PIP, TIC	I	Anaerobic Gram-positives	Breakpoints	11	
 genus	one_of	Actinomyces, Bifidobacterium, Clostridium, Cutibacterium, Eggerthella, Eubacterium, Lactobacillus, Propionibacterium	PEN	R	AMP, AMX, PIP, TIC	R	Anaerobic Gram-positives	Breakpoints	11	
-genus	one_of	Bacteroides, Bilophila , Fusobacterium, Mobiluncus, Porphyromonas, Prevotella	PEN	S	AMP, AMX, PIP, TZP, TIC	S	Anaerobic Gram-negatives	Breakpoints	11	
-genus	one_of	Bacteroides, Bilophila , Fusobacterium, Mobiluncus, Porphyromonas, Prevotella	PEN	I	AMP, AMX, PIP, TZP, TIC	I	Anaerobic Gram-negatives	Breakpoints	11	
-genus	one_of	Bacteroides, Bilophila , Fusobacterium, Mobiluncus, Porphyromonas, Prevotella	PEN	R	AMP, AMX, PIP, TZP, TIC	R	Anaerobic Gram-negatives	Breakpoints	11	
+genus	one_of	Bacteroides, Bilophila , Fusobacterium, Mobiluncus, Porphyromonas, Prevotella	PEN	S	AMP, AMX, PIP, TIC	S	Anaerobic Gram-negatives	Breakpoints	11	
+genus	one_of	Bacteroides, Bilophila , Fusobacterium, Mobiluncus, Porphyromonas, Prevotella	PEN	I	AMP, AMX, PIP, TIC	I	Anaerobic Gram-negatives	Breakpoints	11	
+genus	one_of	Bacteroides, Bilophila , Fusobacterium, Mobiluncus, Porphyromonas, Prevotella	PEN	R	AMP, AMX, PIP, TIC	R	Anaerobic Gram-negatives	Breakpoints	11	
 genus_species	is	Pasteurella multocida	PEN	S	AMP, AMX	S	Pasteurella multocida	Breakpoints	11	
 genus_species	is	Pasteurella multocida	PEN	I	AMP, AMX	I	Pasteurella multocida	Breakpoints	11	
 genus_species	is	Pasteurella multocida	PEN	R	AMP, AMX	R	Pasteurella multocida	Breakpoints	11	
@@ -119,14 +117,11 @@ genus_species	is	Kingella kingae	ERY	S	AZM, CLR	S	Kingella kingae	Breakpoints	11
 genus_species	is	Kingella kingae	ERY	I	AZM, CLR	I	Kingella kingae	Breakpoints	11	
 genus_species	is	Kingella kingae	ERY	R	AZM, CLR	R	Kingella kingae	Breakpoints	11	
 genus_species	is	Kingella kingae	TCY	S	DOX	S	Kingella kingae	Breakpoints	11	
-genus_species	is	Kingella kingae	TCY	I	DOX	I	Kingella kingae	Breakpoints	11	
-genus_species	is	Kingella kingae	TCY	R	DOX	R	Kingella kingae	Breakpoints	11	
 genus_species	is	Burkholderia pseudomallei	TCY	S	DOX	S	Burkholderia pseudomallei	Breakpoints	11	
 genus_species	is	Burkholderia pseudomallei	TCY	I	DOX	I	Burkholderia pseudomallei	Breakpoints	11	
 genus_species	is	Burkholderia pseudomallei	TCY	R	DOX	R	Burkholderia pseudomallei	Breakpoints	11	
-genus	is	Bacillus	NOR	S	fluoroquinolones	S	Bacillus	Breakpoints	11	added in 11
-genus	is	Bacillus	NOR	I	fluoroquinolones	I	Bacillus	Breakpoints	11	added in 11
-genus	is	Bacillus	NOR	R	fluoroquinolones	R	Bacillus	Breakpoints	11	added in 11
+genus	is	Bacillus	NOR	S	CIP, LVX	I	Bacillus	Breakpoints	11	added in 11
+genus	is	Bacillus	NOR	R	CIP, LVX	R	Bacillus	Breakpoints	11	added in 11
 order	is	Enterobacterales			PEN, glycopeptides_except_lipo, lipoglycopeptides, FUS, macrolides, lincosamides, streptogramins, RIF, oxazolidinones	R	Table 1: Intrinsic resistance in Enterobacterales and Aeromonas spp.	Expert Rules	3.2	
 fullname	like	^Citrobacter (koseri|amalonaticus|sedlakii|farmeri|rodentium)			aminopenicillins, TIC	R	Table 1: Intrinsic resistance in Enterobacterales and Aeromonas spp.	Expert Rules	3.2	
 fullname	like	^Citrobacter (freundii|braakii|murliniae|werkmanii|youngae)			aminopenicillins, AMC, SAM, CZO, CEP, LEX, CFR, FOX	R	Table 1: Intrinsic resistance in Enterobacterales and Aeromonas spp.	Expert Rules	3.2	
@@ -192,50 +187,6 @@ genus_species	is	Listeria monocytogenes			CAZ, cephalosporins_except_CAZ	R	Table
 genus	one_of	Leuconostoc, Pediococcus			VAN, TEC	R	Table 4: Intrinsic resistance in gram-positive bacteria	Expert Rules	3.2	
 genus	is	Lactobacillus			VAN, TEC	R	Table 4: Intrinsic resistance in gram-positive bacteria	Expert Rules	3.2	
 fullname	like	^Clostridium (ramosum|innocuum)			VAN	R	Table 4: Intrinsic resistance in gram-positive bacteria	Expert Rules	3.2	
-genus_species	one_of	Escherichia coli, Proteus mirabilis	AMP	R	PIP	R	Expert Rules on Enterobacterales	Expert Rules	3.2	
-genus_species	one_of	Escherichia coli, Proteus mirabilis	AMP	S	PIP	S	Expert Rules on Enterobacterales	Expert Rules	3.2	
-fullname	like	^(Klebsiella(?! aerogenes)|Raoultella)			PIP	R	Expert Rules on Enterobacterales	Expert Rules	3.2	
-fullname	like	^(Enterobacter|Klebsiella aerogenes|Citrobacter freundii|Serratia|Morganella morganii|Hafnia alvei|Providencia)	CXM	S	CXM, cephalosporins_2nd	R	Expert Rules on Enterobacterales	Expert Rules	3.2	
-genus	one_of	Arsenophonus, Biostraticola, Brenneria, Buchnera, Budvicia, Buttiauxella, Cedecea, Citrobacter, Cosenzaea, Cronobacter, Dickeya, Edwardsiella, Enterobacillus, Enterobacter, Erwinia, Escherichia, Ewingella, Franconibacter, Gibbsiella, Hafnia, Izhakiella, Klebsiella, Kluyvera, Kosakonia, Leclercia, Lelliottia, Leminorella, Lonsdalea, Mangrovibacter, Metakosakonia, Mixta, Moellerella, Morganella, Obesumbacterium, Pantoea, Pectobacterium, Phaseolibacter, Photorhabdus, Phytobacter, Plesiomonas, Pluralibacter, Pragia, Proteus, Providencia, Pseudescherichia, Pseudocitrobacter, Rahnella, Raoultella, Rosenbergiella, Rouxiella, Saccharobacter, Samsonia, Serratia, Shigella, Shimwellia, Siccibacter, Sodalis, Tatumella, Thorsellia, Trabulsiella, Wigglesworthia, Xenorhabdus, Yersinia, Yokenella	CIP	R	fluoroquinolones	R	Expert Rules on Enterobacterales	Expert Rules	3.2	This is Enterobacterales except Salmonella spp.
-fullname	like	^(Serratia|Providencia|Morganella morganii)			TGC	R	Expert Rules on Enterobacterales	Expert Rules	3.2	
-genus	is	Salmonella			cephalosporins_2nd	R	Expert Rules on Salmonella	Expert Rules	3.2	
-genus	is	Salmonella			aminoglycosides	R	Expert Rules on Salmonella	Expert Rules	3.2	
-genus	is	Salmonella	PEF	R	CIP	R	Expert Rules on Salmonella	Expert Rules	3.2	
-genus_species	is	Staphylococcus aureus	FOX1	R	betalactams	R	Expert Rules on Staphylococcus	Expert Rules	3.2	
-genus_species	is	Staphylococcus aureus	FOX1	S	betalactams	S	Expert Rules on Staphylococcus	Expert Rules	3.2	
-genus_species	one_of	Staphylococcus aureus, Staphylococcus lugdunensis	PEN	R	AMP, AMX, AZL, BAM, CRB, CRN, EPC, HET, MEC, MEZ, MTM, PIP, PME, PVM, SBC, TAL, TEM, TIC	R	Expert Rules on Staphylococcus	Expert Rules	3.2	all penicillins without beta-lactamse inhibitor
-genus	is	Staphylococcus	ERY, CLI	S	macrolides, lincosamides	S	Expert Rules on Staphylococcus	Expert Rules	3.2	
-genus	is	Staphylococcus	NOR	S	CIP, LVX, MFX, OFX	S	Expert Rules on Staphylococcus	Expert Rules	3.2	
-genus	is	Staphylococcus	LVX	R	fluoroquinolones	R	Expert Rules on Staphylococcus	Expert Rules	3.2	
-genus	is	Staphylococcus	MFX	R	fluoroquinolones	R	Expert Rules on Staphylococcus	Expert Rules	3.2	
-genus	is	Staphylococcus	TCY	S	DOX, MNO, TGC	S	Expert Rules on Staphylococcus	Expert Rules	3.2	
-genus	is	Staphylococcus	TCY	R	DOX, MNO	R	Expert Rules on Staphylococcus	Expert Rules	3.2	
-genus	is	Staphylococcus	LNZ	S	TZD	S	Expert Rules on Staphylococcus	Expert Rules	3.2	
-fullname	like	^Enterococcus (faecalis|faecium)	AMP	R	ureidopenicillins	R	Expert Rules on Enterococcus	Expert Rules	3.2	
-fullname	like	^Enterococcus (faecalis|faecium)	AMX	R	ureidopenicillins	R	Expert Rules on Enterococcus	Expert Rules	3.2	
-genus	is	Enterococcus	NOR	S	CIP, LVX	S	Expert Rules on Enterococcus	Expert Rules	3.2	
-genus_species	is	Enterococcus faecium			CLI	R	Expert Rules on Enterococcus	Expert Rules	3.2	
-genus_species	one_of	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	PEN	S	aminopenicillins, cephalosporins, carbapenems	S	Expert Rules on Streptococcus A, B, C and G	Expert Rules	3.2	
-genus_species	one_of	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	NOR	S	MFX	S	Expert Rules on Streptococcus A, B, C and G	Expert Rules	3.2	
-genus_species	one_of	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	NOR	S	LVX	I	Expert Rules on Streptococcus A, B, C and G	Expert Rules	3.2	
-genus_species	one_of	Streptococcus group A, Streptococcus group B, Streptococcus group C, Streptococcus group G	NOR	R	LVX, MFX	R	Expert Rules on Streptococcus A, B, C and G	Expert Rules	3.2	
-genus_species	is	Streptococcus pneumoniae	OXA	S	PHN, PEN, aminopenicillins, cephalosporins_except_CAZ, carbapenems	S	Expert Rules on Streptococcus pneumoniae	Expert Rules	3.2
-genus_species	is	Streptococcus pneumoniae			CEI, CTB, CFR, FOX	NA	Expert Rules on Streptococcus pneumoniae	Expert Rules	3.2	
-genus_species	is	Streptococcus pneumoniae	NOR	S	MFX	S	Expert Rules on Streptococcus pneumoniae	Expert Rules	3.2	
-genus_species	is	Streptococcus pneumoniae	NOR	R	LVX, MFX	R	Expert Rules on Streptococcus pneumoniae	Expert Rules	3.2	
-genus_species	is	Streptococcus pneumoniae	LVX	R	fluoroquinolones	R	Expert Rules on Streptococcus pneumoniae	Expert Rules	3.2	
-genus_species	is	Streptococcus pneumoniae	MFX	R	fluoroquinolones	R	Expert Rules on Streptococcus pneumoniae	Expert Rules	3.2	
-genus_species	is	Streptococcus pneumoniae	TCY	S	DOX, MNO	S	Expert Rules on Streptococcus pneumoniae	Expert Rules	3.2	
-genus_species	is	Streptococcus pneumoniae	TCY	R	DOX, MNO	R	Expert Rules on Streptococcus pneumoniae	Expert Rules	3.2		
-fullname	like	^Streptococcus (anginosus|australis|bovis|constellatus|cristatus|equinus|gallolyticus|gordonii|infantarius|infantis|intermedius|mitis|mutans|oligofermentans|oralis|parasanguinis|peroris|pseudopneumoniae|salivarius|sanguinis|sinensis|sobrinus|thermophilus|vestibularis|viridans)$	PEN	S	aminopenicillins, CTX, CRO	S	Expert Rules on Viridans Group Streptococci	Expert Rules	3.2	
-genus_species	is	Haemophilus influenzae 	NAL	S	fluoroquinolones	S	Expert Rules on Haemophilus influenzae	Expert Rules	3.2	
-genus_species	is	Haemophilus influenzae 	NAL	R	CIP, LVX, MFX	R	Expert Rules on Haemophilus influenzae	Expert Rules	3.2	
-genus_species	is	Haemophilus influenzae 	TCY	S	DOX, MNO	S	Expert Rules on Haemophilus influenzae	Expert Rules	3.2	
-genus_species	is	Haemophilus influenzae 	TCY	R	DOX, MNO	R	Expert Rules on Haemophilus influenzae	Expert Rules	3.2	
-genus_species	is	Moraxella catarrhalis	NAL	S	fluoroquinolones	S	Expert Rules on Moraxella catarrhalis	Expert Rules	3.2	
-genus_species	is	Moraxella catarrhalis	NAL	R	fluoroquinolones	R	Expert Rules on Moraxella catarrhalis	Expert Rules	3.2	
-genus	is	Campylobacter	ERY	S	CLR, AZM	S	Expert Rules on Campylobacter	Expert Rules	3.2	
-genus_species	is	Campylobacter	ERY	R	CLR, AZM	R	Expert Rules on Campylobacter	Expert Rules	3.2	
 fullname	like	^(Enterobacter|Klebsiella aerogenes|Citrobacter braakii|Citrobacter freundii|Citrobacter gillenii|Citrobacter murliniae|Citrobacter rodenticum|Citrobacter sedlakii|Citrobacter werkmanii|Citrobacter youngae|Hafnia alvei|Serratia|Morganella morganii|Providencia)	CTX	S	CTX, CRO, CAZ		Expert Rules on Enterobacterales (AmpC de-repressed cephalosporins)	Expert Rules	3.2	This is rule 3 and 4 of EUCAST Expert Rules v3.2 on Enterobacterales, result will be set with the 'ampc_derepressed_cephalosporins' argument
 fullname	like	^(Enterobacter|Klebsiella aerogenes|Citrobacter braakii|Citrobacter freundii|Citrobacter gillenii|Citrobacter murliniae|Citrobacter rodenticum|Citrobacter sedlakii|Citrobacter werkmanii|Citrobacter youngae|Hafnia alvei|Serratia|Morganella morganii|Providencia)	CRO	S	CTX, CRO, CAZ		Expert Rules on Enterobacterales (AmpC de-repressed cephalosporins)	Expert Rules	3.2	This is rule 3 and 4 of EUCAST Expert Rules v3.2 on Enterobacterales, result will be set with the 'ampc_derepressed_cephalosporins' argument
 fullname	like	^(Enterobacter|Klebsiella aerogenes|Citrobacter braakii|Citrobacter freundii|Citrobacter gillenii|Citrobacter murliniae|Citrobacter rodenticum|Citrobacter sedlakii|Citrobacter werkmanii|Citrobacter youngae|Hafnia alvei|Serratia|Morganella morganii|Providencia)	CAZ	S	CTX, CRO, CAZ		Expert Rules on Enterobacterales (AmpC de-repressed cephalosporins)	Expert Rules	3.2	This is rule 3 and 4 of EUCAST Expert Rules v3.2 on Enterobacterales, result will be set with the 'ampc_derepressed_cephalosporins' argument
